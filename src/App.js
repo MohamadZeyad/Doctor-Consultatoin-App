@@ -32,10 +32,6 @@ function App() {
       <Card></Card>
       <CategoriesText>Doctors</CategoriesText>
       <DoctorListItem></DoctorListItem>
-      <div className="sdf">
-        <p>asdfsadf</p>
-        <p>asdfsadf</p>
-      </div>
     </div>
   );
 }
