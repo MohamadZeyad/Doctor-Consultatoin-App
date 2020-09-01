@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Doctor-Consultatoin-App/static/css/main.4d978e7f.chunk.css",
+    "main.js": "/Doctor-Consultatoin-App/static/js/main.2cc0b86e.chunk.js",
+    "main.js.map": "/Doctor-Consultatoin-App/static/js/main.2cc0b86e.chunk.js.map",
+    "runtime-main.js": "/Doctor-Consultatoin-App/static/js/runtime-main.748a2273.js",
+    "runtime-main.js.map": "/Doctor-Consultatoin-App/static/js/runtime-main.748a2273.js.map",
+    "static/js/2.8545d14c.chunk.js": "/Doctor-Consultatoin-App/static/js/2.8545d14c.chunk.js",
+    "static/js/2.8545d14c.chunk.js.map": "/Doctor-Consultatoin-App/static/js/2.8545d14c.chunk.js.map",
+    "index.html": "/Doctor-Consultatoin-App/index.html",
+    "precache-manifest.075ea8f36ad3aed8d135c1e66f55b530.js": "/Doctor-Consultatoin-App/precache-manifest.075ea8f36ad3aed8d135c1e66f55b530.js",
+    "service-worker.js": "/Doctor-Consultatoin-App/service-worker.js",
+    "static/css/main.4d978e7f.chunk.css.map": "/Doctor-Consultatoin-App/static/css/main.4d978e7f.chunk.css.map",
+    "static/js/2.8545d14c.chunk.js.LICENSE.txt": "/Doctor-Consultatoin-App/static/js/2.8545d14c.chunk.js.LICENSE.txt",
+    "static/media/search.729687b8.svg": "/Doctor-Consultatoin-App/static/media/search.729687b8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.748a2273.js",
+    "static/js/2.8545d14c.chunk.js",
+    "static/css/main.4d978e7f.chunk.css",
+    "static/js/main.2cc0b86e.chunk.js"
+  ]
+}
