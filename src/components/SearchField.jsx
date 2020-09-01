@@ -19,6 +19,7 @@ const InputField = styled.div`
   height: 45px;
   width: 90vw;
   border-radius: 5px;
+  font-size: 25px;
 `;
 
 const SearchField = () => {
@@ -27,7 +28,7 @@ const SearchField = () => {
       <InputField>
         <SearchIconContainer>
           <SearchIcon></SearchIcon>
-          <input placeholder="Search"></input>
+          <input placeholder="Search" style={{ fontSize: "16px" }}></input>
         </SearchIconContainer>
       </InputField>
     </div>
