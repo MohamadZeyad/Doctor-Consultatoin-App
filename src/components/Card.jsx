@@ -21,7 +21,7 @@ const Image = styled.div`
   margin-left: 20px;
   /* background-color: red; */
   height: 100%;
-  background-image: url("https://photos.google.com/share/AF1QipOoLInNKOkihDGWFHcS0tJROLfORw-V804cvxlw0DA4StShcbvt5fNSXeTI073-Eg?key=OGVEOW1oWTRGSmRfVFdXdHJRNkV4QXI5bG8ybGxn");
+  background-image: url("https://i.ibb.co/whsd8sX/doc-all-by-himself.png");
   background-repeat: no-repeat;
 
   background-size: 120px 170px;
