@@ -6,6 +6,7 @@ const NavContainer = styled.div`
   justify-content: space-between;
   margin-left: 20px;
   width: 90vw;
+  max-width: 500px;
 `;
 
 const NavElement = styled.p`

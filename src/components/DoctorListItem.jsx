@@ -8,6 +8,7 @@ const Container = styled.div`
   margin-left: 20px;
   height: 80px;
   width: 80vw;
+  max-width: 500px;
   border-radius: 5px;
   background-color: #ffecd7;
 `;
@@ -19,23 +20,29 @@ const ImageAndNameContainer = styled.div`
 
   height: 80px;
   width: 70%;
-
-  /* background-color: red; */
 `;
 
 const TextContainer = styled.div`
   display: block;
-  /* background-color: blue; */
+
   height: 40px;
 
   margin-left: 10px;
 `;
-
-const Box = styled.div`
+const ImageContainer = styled.div`
+  display: block;
+  background-color: blue;
   height: 40px;
   width: 40px;
-  margin-left: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+`;
+
+const Image = styled.img`
+  height: 60px;
+  width: 40px;
+
   background-color: #fbb97b;
 `;
 
@@ -66,7 +73,10 @@ const DoctorListItem = () => {
   return (
     <Container>
       <ImageAndNameContainer>
-        <Box></Box>
+        <ImageContainer>
+          <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
+        </ImageContainer>
+
         <TextContainer>
           <H1text>Dr.Stefani Albert</H1text>
           <H2text>Internist</H2text>

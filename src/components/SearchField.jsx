@@ -19,6 +19,7 @@ const InputField = styled.div`
   background-color: #f2f1f1;
   height: 45px;
   width: 90vw;
+  max-width: 500px;
   border-radius: 5px;
   font-size: 25px;
 `;
