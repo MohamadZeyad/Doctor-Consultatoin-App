@@ -32,12 +32,6 @@ function App() {
       <Card></Card>
       <CategoriesText>Doctors</CategoriesText>
       <DoctorListItem></DoctorListItem>
-      <img src="https://filedn.com/ltOdFv1aqz1YIFhf4gTY8D7/ingus-info/BLOGS/Photography-stocks3/stock-photography-slider.jpg"></img>
-      <img
-        src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"
-        alt="doc-all-by-himself"
-        border="0"
-      ></img>
     </div>
   );
 }
