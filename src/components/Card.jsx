@@ -7,6 +7,7 @@ const CardsContainer = styled.div`
   overflow: hidden;
   height: 230px;
   margin-left: 20px;
+
   @media (min-width: 768px) {
     height: 350px;
   }
@@ -76,6 +77,24 @@ const Image = styled.img`
 const Card = () => {
   return (
     <CardsContainer>
+      <CardContainer>
+        <TopCardContainer>
+          <CardText>Cold & Cough</CardText>
+          <CardTextSecondary>10 doctors</CardTextSecondary>
+        </TopCardContainer>
+        <BottomCardContainer>
+          <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
+        </BottomCardContainer>
+      </CardContainer>
+      <CardContainer>
+        <TopCardContainer>
+          <CardText>Cold & Cough</CardText>
+          <CardTextSecondary>10 doctors</CardTextSecondary>
+        </TopCardContainer>
+        <BottomCardContainer>
+          <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
+        </BottomCardContainer>
+      </CardContainer>
       <CardContainer>
         <TopCardContainer>
           <CardText>Cold & Cough</CardText>

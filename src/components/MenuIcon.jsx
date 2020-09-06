@@ -7,7 +7,7 @@ const MenuContainer = styled.div`
   justify-content: space-between;
   height: 15px;
   margin-left: 20px;
-  /* background-color: lightblue; */
+
   margin-top: 40px;
 `;
 

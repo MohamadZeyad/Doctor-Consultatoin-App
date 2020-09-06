@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./App.css";
 import styled from "styled-components";
@@ -21,15 +21,28 @@ const CategoriesText = styled.h2`
   margin-top: 40px;
   margin-left: 20px;
 `;
+const Menu = styled.div`
+  position: absolute;
+  height: 600px;
+  width: 200px;
+  background-color: lightgrey;
+`;
 function App() {
+  const [toggle, setToggle] = useState(false);
   return (
     <div className="App">
-      <MenuIcon></MenuIcon>
+      <div onClick={() => setToggle(!toggle)}>
+        <MenuIcon></MenuIcon>
+      </div>
+
+      <div> {toggle ? <Menu></Menu> : null}</div>
+
       <HeaderText>Find Your Consultation</HeaderText>
       <SearchField></SearchField>
       <CategoriesText>Categories</CategoriesText>
       <Nav></Nav>
       <Card></Card>
+
       <CategoriesText>Doctors</CategoriesText>
       <DoctorListItem></DoctorListItem>
     </div>
