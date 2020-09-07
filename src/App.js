@@ -9,7 +9,7 @@ import SearchField from "./components/SearchField";
 import Nav from "./components/nav";
 import Card from "./components/Card";
 import DoctorListItem from "./components/DoctorListItem";
-
+import ExpandedMenu from "./components/ExpandedMenu";
 const HeaderText = styled.h1`
   width: 70vw;
   margin-left: 20px;
@@ -36,6 +36,7 @@ function App() {
       <div onClick={() => setToggle(!toggle)}>
         <MenuIcon isexpanded={toggle}></MenuIcon>
       </div>
+      {toggle ? <ExpandedMenu></ExpandedMenu> : null}
 
       <HeaderText>Find Your Consultation</HeaderText>
       <SearchField></SearchField>

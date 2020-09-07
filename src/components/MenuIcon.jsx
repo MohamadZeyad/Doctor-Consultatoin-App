@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import ExpandedMenu from "./ExpandedMenu";
 const MenuContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,21 +24,12 @@ const MenuLineSmall = styled.div`
   background-color: black;
   z-index: 10;
 `;
-const Menu = styled.div`
-  margin-top: 0px;
-  margin-left: -20px;
-  position: absolute;
 
-  height: 600px;
-  width: 200px;
-  background-color: lightgrey;
-`;
 const MenuIcon = ({ isexpanded }) => {
   return (
     <MenuContainer>
       <MenuLineLong></MenuLineLong>
       <MenuLineSmall></MenuLineSmall>
-      {isexpanded ? <Menu></Menu> : null}
     </MenuContainer>
   );
 };
