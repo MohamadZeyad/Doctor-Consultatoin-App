@@ -15,19 +15,30 @@ const MenuLineLong = styled.div`
   height: 4px;
   width: 37px;
   background-color: black;
+  z-index: 10;
 `;
 
 const MenuLineSmall = styled.div`
   height: 4px;
   width: 30px;
   background-color: black;
+  z-index: 10;
 `;
+const Menu = styled.div`
+  margin-top: 0px;
+  margin-left: -20px;
+  position: absolute;
 
-const MenuIcon = () => {
+  height: 600px;
+  width: 200px;
+  background-color: lightgrey;
+`;
+const MenuIcon = ({ isexpanded }) => {
   return (
     <MenuContainer>
       <MenuLineLong></MenuLineLong>
       <MenuLineSmall></MenuLineSmall>
+      {isexpanded ? <Menu></Menu> : null}
     </MenuContainer>
   );
 };

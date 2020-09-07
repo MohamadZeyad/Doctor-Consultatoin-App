@@ -21,21 +21,21 @@ const CategoriesText = styled.h2`
   margin-top: 40px;
   margin-left: 20px;
 `;
-const Menu = styled.div`
-  position: absolute;
-  height: 600px;
-  width: 200px;
-  background-color: lightgrey;
-`;
+// const Menu = styled.div`
+//   margin-top: -0px;
+//   position: absolute;
+//   height: 600px;
+//   width: 200px;
+//   background-color: lightgrey;
+// `;
+
 function App() {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   return (
     <div className="App">
       <div onClick={() => setToggle(!toggle)}>
-        <MenuIcon></MenuIcon>
+        <MenuIcon isexpanded={toggle}></MenuIcon>
       </div>
-
-      <div> {toggle ? <Menu></Menu> : null}</div>
 
       <HeaderText>Find Your Consultation</HeaderText>
       <SearchField></SearchField>

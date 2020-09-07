@@ -4,20 +4,30 @@ import styles from "./styles";
 
 const CardsContainer = styled.div`
   display: flex;
-  overflow: hidden;
+  overflow: scroll;
   height: 230px;
+
   margin-left: 20px;
 
+  /* background-color: red; */
   @media (min-width: 768px) {
     height: 350px;
   }
 `;
+
+const Scroller = styled.div`
+  display: flex;
+  overflow-x: scroll;
+  height: 230px;
+  width: 100%;
+`;
+
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 230px;
-  width: 130px;
+  min-width: 130px;
   margin-right: 20px;
   max-width: 200px;
   background-color: ${styles.darkOrange};
@@ -77,42 +87,53 @@ const Image = styled.img`
 const Card = () => {
   return (
     <CardsContainer>
-      <CardContainer>
-        <TopCardContainer>
-          <CardText>Cold & Cough</CardText>
-          <CardTextSecondary>10 doctors</CardTextSecondary>
-        </TopCardContainer>
-        <BottomCardContainer>
-          <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
-        </BottomCardContainer>
-      </CardContainer>
-      <CardContainer>
-        <TopCardContainer>
-          <CardText>Cold & Cough</CardText>
-          <CardTextSecondary>10 doctors</CardTextSecondary>
-        </TopCardContainer>
-        <BottomCardContainer>
-          <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
-        </BottomCardContainer>
-      </CardContainer>
-      <CardContainer>
-        <TopCardContainer>
-          <CardText>Cold & Cough</CardText>
-          <CardTextSecondary>10 doctors</CardTextSecondary>
-        </TopCardContainer>
-        <BottomCardContainer>
-          <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
-        </BottomCardContainer>
-      </CardContainer>
-      <CardContainer>
-        <TopCardContainer>
-          <CardText>Cold & Cough</CardText>
-          <CardTextSecondary>10 doctors</CardTextSecondary>
-        </TopCardContainer>
-        <BottomCardContainer>
-          <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
-        </BottomCardContainer>
-      </CardContainer>
+      <Scroller>
+        <CardContainer>
+          <TopCardContainer>
+            <CardText>Cold & Cough</CardText>
+            <CardTextSecondary>10 doctors</CardTextSecondary>
+          </TopCardContainer>
+          <BottomCardContainer>
+            <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
+          </BottomCardContainer>
+        </CardContainer>
+        <CardContainer>
+          <TopCardContainer>
+            <CardText>Cold & Cough</CardText>
+            <CardTextSecondary>10 doctors</CardTextSecondary>
+          </TopCardContainer>
+          <BottomCardContainer>
+            <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
+          </BottomCardContainer>
+        </CardContainer>
+        <CardContainer>
+          <TopCardContainer>
+            <CardText>Cold & Cough</CardText>
+            <CardTextSecondary>10 doctors</CardTextSecondary>
+          </TopCardContainer>
+          <BottomCardContainer>
+            <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
+          </BottomCardContainer>
+        </CardContainer>
+        <CardContainer>
+          <TopCardContainer>
+            <CardText>Cold & Cough</CardText>
+            <CardTextSecondary>10 doctors</CardTextSecondary>
+          </TopCardContainer>
+          <BottomCardContainer>
+            <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
+          </BottomCardContainer>
+        </CardContainer>
+        <CardContainer>
+          <TopCardContainer>
+            <CardText>Cold & Cough</CardText>
+            <CardTextSecondary>10 doctors</CardTextSecondary>
+          </TopCardContainer>
+          <BottomCardContainer>
+            <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
+          </BottomCardContainer>
+        </CardContainer>
+      </Scroller>
     </CardsContainer>
   );
 };
