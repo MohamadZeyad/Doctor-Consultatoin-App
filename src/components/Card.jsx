@@ -4,7 +4,7 @@ import styles from "./styles";
 
 const CardsContainer = styled.div`
   display: flex;
-  overflow: scroll;
+  /* overflow-y: scroll; */
   height: 230px;
 
   margin-left: 20px;
@@ -18,6 +18,7 @@ const CardsContainer = styled.div`
 const Scroller = styled.div`
   display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
   height: 230px;
   width: 100%;
 `;
