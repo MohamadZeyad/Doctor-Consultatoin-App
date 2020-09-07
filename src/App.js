@@ -30,7 +30,7 @@ const CategoriesText = styled.h2`
 // `;
 
 function App() {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   return (
     <div className="App">
       <div onClick={() => setToggle(!toggle)}>
