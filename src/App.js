@@ -56,7 +56,6 @@ function About() {
   return (
     <div>
       <DoctorDetailsPage></DoctorDetailsPage>
-      <Link to="/">GO BACK</Link>
     </div>
   );
 }
