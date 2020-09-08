@@ -23,3 +23,7 @@ select:focus {
 input:focus::placeholder {
   color: transparent;
 }
+
+a {
+  text-decoration: none;
+}
