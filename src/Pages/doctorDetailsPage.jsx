@@ -10,6 +10,8 @@ import {
   useParams
 } from "react-router-dom";
 
+import DoctorInfoSection from "../components/DoctorInfoSection";
+//CONTAINERS
 const BackArrowContainer = styled.div`
   margin-top: 30px;
   margin-left: 10px;
@@ -23,8 +25,7 @@ const doctorDetailsPage = () => {
           <BackArrow></BackArrow>
         </Link>
       </BackArrowContainer>
-
-      <h1>doctorDetailsPage</h1>
+      <DoctorInfoSection></DoctorInfoSection>
     </div>
   );
 };
