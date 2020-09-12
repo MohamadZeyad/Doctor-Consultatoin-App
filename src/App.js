@@ -70,7 +70,7 @@ function Home() {
           <MenuIcon isexpanded={toggle}></MenuIcon>
         </div>
         {toggle ? <ExpandedMenu></ExpandedMenu> : null}
-        <HeaderText>Find Your Consultation</HeaderText>{" "}
+        <HeaderText>Find Your Consultation</HeaderText>
         <SearchField></SearchField>
         <CategoriesText>Categories</CategoriesText>
         <Nav></Nav>

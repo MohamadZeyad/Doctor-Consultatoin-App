@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { ReactComponent as PhoneIcon } from "../phone.svg";
+import { ReactComponent as VideoIcon } from "../videoIcon.svg";
+import { ReactComponent as MailIcon } from "../mailIcon.svg";
 import styles from "./styles";
 const DoctorInfoContainer = styled.div`
   display: flex;
@@ -10,13 +12,18 @@ const DoctorInfoContainer = styled.div`
   margin-left: 20px;
   height: 200px;
   width: 90vw;
+  max-width: 500px;
 `;
 
 const ImageContainer = styled.div`
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  background-color: ${styles.darkOrange};
   height: 180px;
   width: 30%;
+  max-width: 130px;
   border-radius: 20px;
+  overflow: hidden;
 `;
 
 const InfoContainer = styled.div`
@@ -24,6 +31,7 @@ const InfoContainer = styled.div`
   flex-direction: column;
   height: 180px;
   width: 65%;
+  /* margin-left: 20px; */
   /* background-color: orange; */
 `;
 
@@ -62,6 +70,7 @@ const IconPlaceholder = styled.div`
   justify-content: center;
   align-items: center;
   background-color: red;
+  border-radius: 18px;
   height: 50px;
   width: 50px;
 `;
@@ -73,11 +82,26 @@ const Icon = (icon, background) => {
   return <DDD>{icon}</DDD>;
 };
 
+const Image = styled.img`
+  height: 70%;
+  width: 100%;
+  max-width: 100px;
+  max-height: 200px;
+  margin-top: 55px;
+  margin-left: -10px;
+
+  /* @media (min-width: 768px) {
+    margin-top: -40px;
+  } */
+`;
+
 const DoctorInfoSection = () => {
   return (
     <div>
       <DoctorInfoContainer>
-        <ImageContainer></ImageContainer>
+        <ImageContainer>
+          <Image src="https://i.ibb.co/whsd8sX/doc-all-by-himself.png"></Image>
+        </ImageContainer>
         <InfoContainer>
           <TextContainer>
             <H1Text>Dr.Stefani</H1Text>
@@ -87,7 +111,7 @@ const DoctorInfoSection = () => {
           <IconsContainer>
             {/* <IconPlaceholder>{Icon("hi")}</IconPlaceholder> */}
             {Icon(
-              <PhoneIcon fill={styles.darkOrange}></PhoneIcon>,
+              <MailIcon fill={styles.darkOrange}></MailIcon>,
               styles.lightOrange
             )}
 
@@ -96,7 +120,7 @@ const DoctorInfoSection = () => {
               styles.lightRed
             )}
             {Icon(
-              <PhoneIcon fill={styles.darkGray}></PhoneIcon>,
+              <VideoIcon fill={styles.darkGray}></VideoIcon>,
               styles.lightGray
             )}
 

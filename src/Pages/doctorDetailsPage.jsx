@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import styles from "../components/styles";
+
 import { ReactComponent as BackArrow } from "../backArrow.svg";
 import {
   BrowserRouter as Router,
@@ -16,6 +16,7 @@ import DoctorInfoSection from "../components/DoctorInfoSection";
 const BackArrowContainer = styled.div`
   margin-top: 30px;
   margin-left: 10px;
+  margin-bottom: 20px;
 `;
 
 const doctorDetailsPage = () => {
@@ -23,7 +24,7 @@ const doctorDetailsPage = () => {
     <div>
       <BackArrowContainer>
         <Link to="/">
-          <BackArrow></BackArrow>
+          <BackArrow height="30px" width="30px"></BackArrow>
         </Link>
       </BackArrowContainer>
       <DoctorInfoSection></DoctorInfoSection>
