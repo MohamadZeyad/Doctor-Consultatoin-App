@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-
+import { ReactComponent as PhoneIcon } from "../phone.svg";
+import styles from "./styles";
 const DoctorInfoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   margin-left: 20px;
   height: 200px;
-  width: 100vw;
+  width: 90vw;
 `;
 
 const ImageContainer = styled.div`
@@ -23,7 +24,7 @@ const InfoContainer = styled.div`
   flex-direction: column;
   height: 180px;
   width: 65%;
-  background-color: orange;
+  /* background-color: orange; */
 `;
 
 const TextContainer = styled.div`
@@ -32,7 +33,7 @@ const TextContainer = styled.div`
   justify-content: space-around; */
   height: 65%;
   width: 100%;
-  background-color: lightcyan;
+  /* background-color: lightcyan; */
 `;
 const IconsContainer = styled.div`
   display: flex;
@@ -40,8 +41,9 @@ const IconsContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 35%;
-  width: 100%;
-  background-color: cyan;
+  /* width: 90%; */
+  max-width: 200px;
+  /* background-color: cyan; */
 `;
 
 const H1Text = styled.div`
@@ -56,10 +58,20 @@ const PText = styled.div`
 `;
 
 const IconPlaceholder = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: red;
   height: 50px;
   width: 50px;
 `;
+
+const Icon = (icon, background) => {
+  const DDD = styled(IconPlaceholder)`
+    background-color: ${background};
+  `;
+  return <DDD>{icon}</DDD>;
+};
 
 const DoctorInfoSection = () => {
   return (
@@ -73,9 +85,23 @@ const DoctorInfoSection = () => {
             <PText>Heart Specialist</PText>
           </TextContainer>
           <IconsContainer>
-            <IconPlaceholder></IconPlaceholder>
-            <IconPlaceholder></IconPlaceholder>
-            <IconPlaceholder></IconPlaceholder>
+            {/* <IconPlaceholder>{Icon("hi")}</IconPlaceholder> */}
+            {Icon(
+              <PhoneIcon fill={styles.darkOrange}></PhoneIcon>,
+              styles.lightOrange
+            )}
+
+            {Icon(
+              <PhoneIcon fill={styles.darkRed}></PhoneIcon>,
+              styles.lightRed
+            )}
+            {Icon(
+              <PhoneIcon fill={styles.darkGray}></PhoneIcon>,
+              styles.lightGray
+            )}
+
+            {/* <IconPlaceholder></IconPlaceholder>
+            <IconPlaceholder></IconPlaceholder> */}
           </IconsContainer>
         </InfoContainer>
       </DoctorInfoContainer>

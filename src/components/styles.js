@@ -1,5 +1,9 @@
 const color = {
-  darkOrange: "#fbb97b",
-  lightOrange: "#ffecd7"
+  darkOrange: "#f6bc81",
+  lightOrange: "#ffecd7",
+  darkGray: "#9aa6b6",
+  lightGray: "#ececf4",
+  darkRed: "#f56565",
+  lightRed: "#fed2d2"
 };
 export default color;
