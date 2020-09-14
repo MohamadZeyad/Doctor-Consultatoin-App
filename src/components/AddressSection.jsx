@@ -7,6 +7,7 @@ const AddressSectionContainer = styled.div`
   height: 200px;
   width: 90wv;
   margin-left: 20px;
+  margin-top: 20px;
   /* background-color: red; */
 `;
 const InformationContainer = styled.div`
@@ -15,11 +16,13 @@ const InformationContainer = styled.div`
   /* background-color: blue; */
   height: 200px;
   width: 60%;
+  margin-top: 10px;
 `;
 const MapContainer = styled.div`
-  /* background-color: pink; */
+  background-color: pink;
   height: 200px;
   width: 40%;
+  border-radius: 20px;
 `;
 
 const InformaionBlockContainer = styled.div`
@@ -36,12 +39,14 @@ const InformaionBlock = (bg, headerText, paragraphText, icon) => {
   const H1Text = styled.div`
     font-size: 18px;
     font-weight: bold;
-    color: red;
+
+    /* color: red; */
   `;
   const ParagraphText = styled.div`
     font-size: 16px;
     font-weight: normal;
-    color: red;
+    margin-top: 7px;
+    color: gray;
   `;
   const IconContainer = styled.div`
     height: 100%;
@@ -68,8 +73,18 @@ const AddressSection = () => {
   return (
     <AddressSectionContainer>
       <InformationContainer>
-        {InformaionBlock("white", "Address", "Houese at 2 avenue", <Pin></Pin>)}
-        {InformaionBlock("white", "Daily Practict", "Monday-Friday")}
+        {InformaionBlock(
+          "white",
+          "Address",
+          "Houese at 2 avenue close to Star market",
+          <Pin></Pin>
+        )}
+        {InformaionBlock(
+          "white",
+          "Daily Practict",
+          "Monday-Friday Open till 7pm",
+          <Pin></Pin>
+        )}
       </InformationContainer>
 
       <MapContainer></MapContainer>
