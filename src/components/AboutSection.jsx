@@ -5,7 +5,7 @@ const AboutSectionContainer = styled.div`
   height: 170px;
   width: 90vw;
   /* background-color: red; */
-  margin-left: 20px;
+  /* margin-left: 20px; */
   overflow: hidden;
   word-wrap: break-word;
 `;

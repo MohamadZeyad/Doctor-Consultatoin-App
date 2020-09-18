@@ -1,0 +1,26 @@
+This is a list of all the snippets defined for you to use:
+//////////////////////////////////////////////////////////
+
+
+1-// imr =  import React from "react";
+2-// isc = import styled from 'styled-components';
+
+3-// slr = const FileName = () => {
+  return (
+    
+  );
+}
+
+
+
+4-// df = display: flex;
+5-// bgr = background-color: red;
+6-// fdc = flex-direction: column;
+7-// aic = align-items: center;
+8-// jcc = justify-content: center;
+9-// h = height: 100vh;
+10-// w = width: 100vw;
+11-// cd = const Div = styled.div 
+12-// mt = margin-top: 20px;
+13-// ml = margin-left: 20px;
+

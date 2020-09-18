@@ -6,13 +6,15 @@ const AddressSectionContainer = styled.div`
   display: flex;
   height: 200px;
   width: 90wv;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   margin-top: 20px;
   /* background-color: red; */
 `;
 const InformationContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* background-color: blue; */
   height: 200px;
   width: 60%;

@@ -9,7 +9,7 @@ const DoctorInfoContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   /* background-color: lightgray; */
-  margin-left: 20px;
+  /* margin-left: 20px; */
   height: 200px;
   width: 90vw;
   max-width: 500px;
