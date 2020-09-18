@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ReactComponent as Pin } from "../Pin.svg";
+import styles from "./styles";
 
 const AddressSectionContainer = styled.div`
   display: flex;
@@ -21,7 +22,8 @@ const InformationContainer = styled.div`
   margin-top: 10px;
 `;
 const MapContainer = styled.div`
-  background-color: pink;
+  /* background-color: pink; */
+  background-color: ${styles.lightGray};
   height: 200px;
   width: 40%;
   border-radius: 20px;
@@ -40,15 +42,17 @@ const InformaionBlock = (bg, headerText, paragraphText, icon) => {
   `;
   const H1Text = styled.div`
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
 
     /* color: red; */
   `;
   const ParagraphText = styled.div`
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     margin-top: 7px;
-    color: gray;
+    color: lightgrey;
+    width: 150px;
+    /* background-color: red; */
   `;
   const IconContainer = styled.div`
     height: 100%;
