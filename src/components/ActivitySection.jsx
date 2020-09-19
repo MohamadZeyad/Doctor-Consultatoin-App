@@ -22,30 +22,56 @@ const GridContainer = styled.div`
   margin-top: -10px;
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 90px;
   width: 100%;
   /* background-color: blue; */
 `;
 
-// const GridElement = styled.div`
-//   height: 100%;
-//   width: 45%;
-//   background-color: orange;
-//   border-radius: 25px;
-// `;
-
-const GridElement = background => {
-  var Element = styled.div`
+const GridElement = (background, text, iconColor) => {
+  const Element = styled.div`
     height: 100%;
     width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: ${background};
-    border-radius: 25px;
+    border-radius: 15px;
   `;
 
-  //   const DDD = styled(IconPlaceholder)`
-  //     background-color: ${background};
-  //   `;
-  return <Element></Element>;
+  const ContentContainer = styled.div`
+    display: flex;
+    align-items: center;
+
+    height: 70%;
+    width: 70%;
+    /* background-color: red; */
+  `;
+
+  const Icon = styled.div`
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: ${iconColor};
+  `;
+
+  const Text = styled.div`
+    height: 50%;
+    width: 50%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: auto;
+    /* background-color: green; */
+  `;
+
+  return (
+    <Element>
+      <ContentContainer>
+        <Icon></Icon>
+        <Text>{text}</Text>
+      </ContentContainer>
+    </Element>
+  );
 };
 
 const ActivitySection = () => {
@@ -53,8 +79,8 @@ const ActivitySection = () => {
     <Container>
       <H1Text>Activity</H1Text>
       <GridContainer>
-        {GridElement(styles.darkGray)}
-        {GridElement(styles.darkOrange)}
+        {GridElement(styles.darkOrange, "List of schedule", "#f8c89a")}
+        {GridElement("#a5a5a5", "Doctors Daily Post", "#b4b4b4")}
       </GridContainer>
     </Container>
   );

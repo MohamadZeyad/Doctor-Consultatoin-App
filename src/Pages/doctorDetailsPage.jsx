@@ -51,7 +51,7 @@ const doctorDetailsPage = () => {
         <DoctorInfoSection></DoctorInfoSection>
         <AboutSection></AboutSection>
         <AddressSection></AddressSection>
-        {/* <ActivitySection></ActivitySection> */}
+        <ActivitySection></ActivitySection>
       </DoctorDetailsPageContainer>
     </DoctorDetailsPage>
   );
