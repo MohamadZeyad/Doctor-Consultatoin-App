@@ -54,6 +54,7 @@ const H1text = styled.div`
 
 const H2text = styled.div`
   font-size: 12px;
+  color: black;
 `;
 
 const CTA = styled.div`
