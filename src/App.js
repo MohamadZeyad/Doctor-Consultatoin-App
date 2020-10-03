@@ -17,6 +17,8 @@ import Card from "./components/Card";
 import DoctorListItem from "./components/DoctorListItem";
 import ExpandedMenu from "./components/ExpandedMenu";
 import DoctorDetailsPage from "./Pages/doctorDetailsPage";
+import ScrollRestorationWrapper from "./components/scrollRestorationWrapper";
+
 const HeaderText = styled.h1`
   width: 70vw;
   margin-left: 20px;
@@ -86,15 +88,17 @@ function Home() {
 function App() {
   return (
     <div>
-      <Switch>
-        <Route exact path="/about">
-          <About></About>
-        </Route>
+      <ScrollRestorationWrapper>
+        <Switch>
+          <Route exact path="/about">
+            <About></About>
+          </Route>
 
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </ScrollRestorationWrapper>
     </div>
   );
 }
