@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ReactComponent as Pin } from "../Pin.svg";
+import { ReactComponent as Watch } from "../Watch.svg";
 import styles from "./styles";
 
 const AddressSectionContainer = styled.div`
@@ -83,13 +84,14 @@ const AddressSection = () => {
           "white",
           "Address",
           "Houese at 2 avenue close to Star market",
-          <Pin></Pin>
+          <Pin opacity="0.7"></Pin>
         )}
         {InformaionBlock(
           "white",
           "Daily Practict",
           "Monday-Friday Open till 7pm",
-          <Pin></Pin>
+
+          <Watch opacity="1"></Watch>
         )}
       </InformationContainer>
 
