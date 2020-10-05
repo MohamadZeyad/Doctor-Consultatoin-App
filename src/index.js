@@ -11,11 +11,14 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+import ScrollRestorationWrapper from "./components/scrollRestorationWrapper";
 ReactDOM.render(
   <Router>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <ScrollRestorationWrapper>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </ScrollRestorationWrapper>
   </Router>,
   document.getElementById("root")
 );
