@@ -15,9 +15,7 @@ import ScrollRestorationWrapper from "./components/scrollRestorationWrapper";
 ReactDOM.render(
   <Router>
     <ScrollRestorationWrapper>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      <App />
     </ScrollRestorationWrapper>
   </Router>,
   document.getElementById("root")
