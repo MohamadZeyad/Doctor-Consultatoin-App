@@ -14,9 +14,8 @@ import {
 import ScrollRestorationWrapper from "./components/scrollRestorationWrapper";
 ReactDOM.render(
   <Router>
-    <ScrollRestorationWrapper>
-      <App />
-    </ScrollRestorationWrapper>
+    <ScrollRestorationWrapper />
+    <App />
   </Router>,
   document.getElementById("root")
 );
